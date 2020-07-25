@@ -1,0 +1,23 @@
+export const buttons = {
+	fontStyleID    : document.querySelector('#input-font'),
+	fontSizeID     : document.querySelector('#fontSize'),
+	color          : document.querySelector('.color-apply'),
+	bold           : document.querySelector('.bold'),
+	italic         : document.querySelector('.italic'),
+	underline      : document.querySelector('.underline'),
+	strikethrough  : document.querySelector('.strikethrough'),
+	highlight      : document.querySelector('.Hightlight'),
+	codeblock      : document.querySelector('.Code'),
+	unorderedlist  : document.querySelector('.insertUnorderedList'),
+	orderedlist    : document.querySelector('.insertOrderedList'),
+	checkbox       : document.querySelector('.checkBox'),
+	alignID        : document.querySelector('#align'),
+	indentDecrease : document.querySelector('.outdent'),
+	indentIncrease : document.querySelector('.indent'),
+	table          : document.querySelector('.table'),
+	rule           : document.querySelector('.rule'),
+	link           : document.querySelector('.Link'),
+	unlink         : document.querySelector('.unlink'),
+	attach         : document.querySelector('.attach'),
+	editor         : document.querySelector('.editor')
+};

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4572bf26e5.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Text Editor</title>
+</head>
+<body>
+    <div class="container">
+        <div class="col col-1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti optio laboriosam animi at nihil provident excepturi, nam nisi quasi ipsam reprehenderit accusantium quibusdam praesentium qui officia facere assumenda, aliquid modi.
+        </div>
+        <div class="col col-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ex harum nulla, sed quisquam molestiae, dolorem repudiandae eaque sunt laudantium natus unde quis quidem nostrum accusamus laborum ipsa excepturi sapiente.
+        </div>
+        <div class="col col-3">
+            <div class="sub-row-1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti optio laboriosam animi at nihil provident excepturi, nam nisi quasi ipsam reprehenderit accusantium quibusdam praesentium qui officia facere assumenda, aliquid modi.
+            </div>
+            <div class="toolbar">
+
+                <select id="input-font" class="input" style="width: 120px;">
+                    <option value="Arial">Arial</option>
+                    <option value="Arial Black">Arial Black</option>
+                    <option value="Bahnschrift">Bahnschrift</option>
+                    <option value="Calibri">Calibri</option>
+                    <option value="Cambria">Cambria</option>
+                    <option value="Candara">Candara</option>
+                    <option value="Comic Sans MS">Comic Sans MS</option>
+                    <option value="Constantia">Constantia</option>
+                    <option value="Courier New">Courier New</option>
+                    <option value="Ebrima">Ebrima</option>
+                    <option value="Franklin Gothic Medium">Franklin Gothic Medium</option>
+                    <option value="Gabriola">Gabriola</option>
+                    <option value="Garamond">Garamond</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Helvetica">Helvetica</option>
+                    <option value="Impact">Impact</option>
+                    <option value="Ink Free">Ink Free</option>
+                    <option value="Javanese Text">Javanese Text</option>
+                    <option value="Leelawadee UI">Leelawadee UI</option>
+                    <option value="Lucida Console">Lucida Console</option>
+                    <option value="Malgun Gothic">Malgun Gothic</option>
+                    <option value="Nirmala UI">Nirmala UI</option>
+                    <option value="Palatino">Palatino</option>
+                    <!-- <option value="Press Start 2P">Press Start 2P</option> -->
+                    <option value="Raleway">Raleway</option>
+                    <option value="Sans serif">Sans serif</option>
+                    <option value="Segoe UI">Segoe UI</option>
+                    <option value="Tahoma">Tahoma</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                    <option value="Verdana">Verdana</option>
+                    <option value="Webdings">Webdings</option>
+                    <option value="Yu Gothic">Yu Gothic</option>
+                </select>
+
+                
+                <select id="fontSize">
+                    <option value="1">8</option>      
+                    <option value="2">9</option>
+                    <option value="3" selected>10</option>
+                    <option value="4">11</option>
+                    <option value="5">12</option>
+                    <option value="6">14</option>
+                    <option value="7">16</option>
+                  </select>
+
+                <input class="color-apply" type="color" id="myColor">
+
+                <button class="bold " title="Bold"><i class="fas fa-bold"></i></button>
+                <button class="italic " title="Italics"><i class="fas fa-italic"></i></button>
+                <button class="underline " title="Underline"><i class="fas fa-underline"></i></button>
+                <button class="strikethrough " title="Strikethrough"><i class="fas fa-strikethrough"></i></button>
+                <button class="Hightlight " title="Hightlight"><i class="fas fa-highlighter"></i></button>
+                <button class="Code" title="Code"><i class="fas fa-code"></i></button>
+
+                <div class="vertical"></div>
+
+                <button class="insertUnorderedList" title="Unordered list"><i class="fas fa-list-ul"></i></button>
+                <button class="insertOrderedList" title="Ordered list"><i class="fas fa-list-ol"></i></button>
+                <button class="checkBox " title="Insert Checkbox"><i class="far fa-check-square"></i></button>
+
+                <select id="align" class="fa">
+                    <option value="justifyLeft" selected> &#xf036; Align Left</option>
+                    <option value="justifyCenter"> &#xf037; Center</option>
+                    <option value="justifyRight"> &#xf038; Align Right</option>
+                    <option value="justifyFull"> &#xf039; Justify</option>
+                </select>
+
+                <button class="outdent" title="Decrease Indent"><i class="fas fa-indent"></i></button>
+                <button class="indent" title="Increase Indent"><i class="fas fa-indent"></i></button>
+
+                <div class="vertical"></div>
+
+                <button class="table" title="Insert Table"><i class="fas fa-table"></i></button>
+                <button class="rule" title="Insert Rule"><i class="fas fa-grip-lines"></i></button>
+
+                <div class="vertical"></div>
+
+                <button class="Link" title="Hyperlink"><i class="fas fa-link"></i></button>
+                <button class="unlink" title="Unlink"><i class="fas fa-unlink"></i></button>
+                <button class="attach" title="Attach"><i class="fas fa-paperclip"></i></button>
+            </div>
+            <div class="editor" contenteditable="true">
+            </div>
+            
+        </div>
+    </div>
+<script src="js/bundle.js"></script></body>
+</html>

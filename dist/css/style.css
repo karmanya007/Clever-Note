@@ -1,0 +1,115 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+.col-1,
+.col-2,
+.sub-row-1 {
+	font-family: 'Raleway', sans-serif;
+}
+.container {
+	display: flex;
+	height: 100%;
+}
+
+.col {
+	border: 1px #ccc solid;
+	padding: 5px;
+}
+
+.col-1 {
+	flex: 0.8;
+	background-color: rgb(37, 37, 37);
+	color: #ffffff;
+}
+
+.col-2 {
+	flex: 1.2;
+	background-color: rgb(211, 211, 211);
+}
+
+.col-3 {
+	background-color: #ffffff;
+	flex: 4;
+	display: flex;
+	min-width: 600px;
+	flex-direction: column;
+}
+
+.sub-row-1 {
+	margin-bottom: 5px;
+}
+
+.toolbar {
+	border: 1px #ddd solid;
+	background: #f4f4f4;
+	padding: 3px;
+	border-radius: 3px;
+}
+
+.toolbar > button {
+	cursor: pointer;
+	border: none;
+	font-size: large;
+	background: #f4f4f4;
+	border-radius: 3px;
+}
+.toolbar > button:hover {
+	background: #707070;
+}
+
+[contenteditable] {
+	outline: 0px solid transparent;
+}
+
+.editor {
+	padding-left: 40px;
+	padding-top: 20px;
+	padding-right: 40px;
+	overflow: auto;
+	min-height: 88%;
+}
+
+.vertical {
+	border-left: 2px solid rgb(146, 145, 145);
+	border-radius: 1px;
+	height: 80%;
+	display: inline-block;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+.fa option {
+	font-weight: 900;
+}
+
+.indentDecrease {
+	transform: rotate(180deg);
+}
+
+label {
+	pointer-events: none;
+	padding-left: 0.4em;
+}
+
+.codeBlock {
+	background-color: rgb(245, 194, 194);
+	font-size: small;
+	font-family: 'Press Start 2P', cursive;
+	min-height: 5%;
+	overflow: auto;
+}
+
+.isActive {
+	background: #bbeffc !important;
+	border: none !important;
+}
